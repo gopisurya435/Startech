@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Startech — Computer Services</title>
+  <meta name="description" content="Startech Computer Services — repairs, upgrades, and IT support." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://raw.githubusercontent.com/github/explore/main/topics/computer/computer.png" alt="Startech logo" class="logo" />
+        <h1>Startech</h1>
+      </div>
+      <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false">Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h2>Reliable computer repair & IT support</h2>
+        <p>Fast diagnostics, honest pricing, and remote or in-shop service for desktops and laptops.</p>
+        <a class="btn" href="#contact">Book a Service</a>
+      </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h3>Our Services</h3>
+      <div class="services-grid">
+        <article class="service-card">
+          <h4>Diagnostics & Repair</h4>
+          <p>Hardware repair, virus removal, and component replacement.</p>
+        </article>
+        <article class="service-card">
+          <h4>Upgrades</h4>
+          <p>RAM, SSD, GPU upgrades, and performance tuning.</p>
+        </article>
+        <article class="service-card">
+          <h4>IT Support</h4>
+          <p>Remote support, software setup, backup & recovery solutions.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About Startech</h3>
+      <p>We are a local computer services shop focused on delivering fast, friendly, and professional service. Certified technicians, clear pricing, and a satisfaction guarantee.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact & Bookings</h3>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Name
+          <input name="name" type="text" required />
+        </label>
+        <label>
+          Email
+          <input name="email" type="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send Request</button>
+        <div id="form-status" class="form-status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Startech — Computer Services</p>
+      <p><small>Made with care • <a href="https://github.com/gopisurya435/Startech">Repository</a></small></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
